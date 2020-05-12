@@ -3,11 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package bai_1;
 
-/**
- *
- * @author Duc Thang
- */
+
 public class Document {
     protected String id;
     protected String nxb;

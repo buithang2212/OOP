@@ -3,6 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package bai_1;
+
+/**
+ *
+ * @author Duc Thang
+ */
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 /**
  *
@@ -11,11 +22,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class managerDoccument {
+public class ManagerDoccument {
 
     List<Document> documents;
 
-    public managerDoccument() {
+    public ManagerDoccument() {
         this.documents = new ArrayList<>();
     }
 
@@ -43,11 +54,12 @@ public class managerDoccument {
     }
 
     public void searchByNewspaper() {
-        this.documents.stream().filter(doc -> doc instanceof baoChi).forEach(doc -> System.out.println(doc.toString()));
+        this.documents.stream().filter(doc -> doc instanceof NewsPaper).forEach(doc -> System.out.println(doc.toString()));
     }
 
     public void searchByJournal() {
-        this.documents.stream().filter(doc -> doc instanceof tapChi).forEach(doc -> System.out.println(doc.toString()));
+        this.documents.stream().filter(doc -> doc instanceof Magazine).forEach(doc -> System.out.println(doc.toString()));
     }
 
 }
+

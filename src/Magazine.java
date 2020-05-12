@@ -3,16 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package bai_1;
 
 /**
  *
  * @author Duc Thang
  */
-public class tapChi extends Document{
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Duc Thang
+ */
+public class Magazine extends Document{
     private int issnumber;
     private int monthIssue;
 
-    public tapChi(String id, String nxb, int number) {
+    public Magazine(String id, String nxb, int number) {
         super(id, nxb, number);
         this.issnumber = issnumber;
         this.monthIssue = monthIssue;
@@ -46,3 +57,4 @@ public class tapChi extends Document{
 
     
 }
+
